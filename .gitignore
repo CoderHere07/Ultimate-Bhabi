@@ -1,0 +1,23 @@
+# Node.js
+node_modules/
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+.env*
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
