@@ -1,8 +1,5 @@
 # 🃏 Bhabhi Ultimate - Premium Card Game
 
-<!-- Premium Banner: Replace with custom generated image when service restored -->
-![Bhabhi Ultimate Banner](https://images.unsplash.com/photo-1541123439599-7977a49938c5?q=80&w=1200&auto=format&fit=crop&text=Bhabhi+Ultimate)
-
 Bhabhi Ultimate is a professionally crafted, immersion-focused mobile card game implementation of the popular South Asian game "Bhabhi" (also known as Tula). Built with **Expo** and **Firebase**, it features a premium aesthetic, smooth animations, and real-time state management.
 
 ## ✨ Features
