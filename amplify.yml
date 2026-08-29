@@ -4,6 +4,13 @@ frontend:
     preBuild:
       commands:
         - npm ci
+        - echo "EXPO_PUBLIC_FIREBASE_API_KEY=$EXPO_PUBLIC_FIREBASE_API_KEY" >> .env
+        - echo "EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN=$EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN" >> .env
+        - echo "EXPO_PUBLIC_FIREBASE_PROJECT_ID=$EXPO_PUBLIC_FIREBASE_PROJECT_ID" >> .env
+        - echo "EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET=$EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET" >> .env
+        - echo "EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=$EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID" >> .env
+        - echo "EXPO_PUBLIC_FIREBASE_APP_ID=$EXPO_PUBLIC_FIREBASE_APP_ID" >> .env
+        - echo "EXPO_PUBLIC_FIREBASE_MEASUREMENT_ID=$EXPO_PUBLIC_FIREBASE_MEASUREMENT_ID" >> .env
     build:
       commands:
         - npx expo export -p web
@@ -14,3 +21,7 @@ frontend:
   cache:
     paths:
       - node_modules/**/*
+customRules:
+  - source: '</^[^.]+$|\.(?!(css|gif|ico|jpg|js|png|txt|svg|woff|woff2|ttf|map|json|webp)$)([^.]+$)/>'
+    status: '200'
+    target: '/index.html'
